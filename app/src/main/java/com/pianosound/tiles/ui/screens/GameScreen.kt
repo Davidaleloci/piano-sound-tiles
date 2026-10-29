@@ -310,18 +310,14 @@ fun GameScreen(
                 }
 
                 // Floating feedback text (PERFECT / GREAT / MISS)
-                AnimatedVisibility(
-                    visible = lastFeedback != null,
-                    enter = fadeIn(),
-                    exit = fadeOut(),
-                    modifier = Modifier.align(Alignment.Center)
-                ) {
+                if (lastFeedback != null) {
                     Text(
                         text = lastFeedback ?: "",
                         color = feedbackColor,
                         fontSize = 32.sp,
                         fontWeight = FontWeight.Black,
-                        letterSpacing = 2.sp
+                        letterSpacing = 2.sp,
+                        modifier = Modifier.align(Alignment.Center)
                     )
                 }
             }
