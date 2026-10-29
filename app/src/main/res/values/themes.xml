@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.PianoSoundTiles" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/deep_background</item>
+        <item name="android:navigationBarColor">@color/deep_background</item>
+        <item name="android:windowBackground">@color/deep_background</item>
+    </style>
+</resources>
